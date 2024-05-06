@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web bán đồ công nghệ </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="index.html">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="index.html">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="index.html">Liên hệ</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <a href="account.html"> <img src="assets/user.png" alt=""></a>
+                </div>
+                <div class="item">
+                    <a href="cart.html"> <img src="assets/cart.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="container flex">
+              <div class="left">
+                <div class="main_image">
+                  <img src="assets/Product6/p1.jpg" class="slide">
+                </div>
+                <div class="option flex">
+                  <img src="assets/Product6/p1.jpg" onclick="img('assets/Product6/p1.jpg')">
+                  <img src="assets/Product6/p2.jpg" onclick="img('assets/Product6/p2.jpg')">
+                  <img src="assets/Product6/p3.jpg" onclick="img('assets/Product6/p3.jpg')">
+                  <img src="assets/Product6/p4.jpg" onclick="img('assets/Product6/p4.jpg')">
+                  <img src="assets/Product6/p5.jpg" onclick="img('assets/Product6/p5.jpg')">
+                  <img src="assets/Product6/p6.jpg" onclick="img('assets/Product6/p6.jpg')">
+                </div>
+              </div>
+              <div class="right">
+                <h3>Xiaomi Redmi Watch 3</h3>
+                <h4> <small></small>2.590.000₫</h4>
+                <p>Tầm giá chưa đến 3 triệu đồng thì một chiếc smartwatch vừa có nghe gọi vừa được.</p>
+                <h5>Màu sắc</h5>
+                <div class="color flex1">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h5>Số lượng</h5>
+                <div class="add flex1">
+                  <span>-</span>
+                  <label>1</label>
+                  <span>+</span>
+                </div>
+
+                <button onclick="alert('Sản phẩm đã được thêm vào giỏ hàng!')"class="addbutton">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+          </section>
+          <script>
+            function img(anything) {
+              document.querySelector('.slide').src = anything;
+            }
+        
+            function change(change) {
+              const line = document.querySelector('.home');
+              line.style.background = change;
+            }
+          </script>
+        </body>
+        </html>
